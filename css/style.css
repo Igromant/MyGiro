@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:"Roboto-Regular";
+}
+
+@font-face{
+    font-family:"Roboto-Regular";
+    src: url(/css/fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Ubuntu-Bold";
+    src: url(/css/fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face{
+    font-family:"Roboto-Medium";
+    src: url(/css/fonts/Roboto-Medium.ttf);
+}
+
+h1, h2, h3{
+    font-family:"Ubuntu-Bold";
+}
+
+.title{
+    font-size: 32px;
+    line-height: 160%;
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.header{
+    background: rgb(67, 0, 182);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 5px rgb(34, 16, 96);
+}
+
+.header__block{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-decoration: none;
+    font-family:"Ubuntu-Bold";
+    font-size: 32px;
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+    border: 4px solid rgb(126, 179, 206);
+    border-radius: 50%;
+    padding: 5px 15px;
+    box-shadow: 8px 8px 5px rgba(22, 22, 22, 0.476);
+    background: rgba(22, 22, 22, 0.51);
+}
+
+.phone{
+    font-size: 16px;
+    line-height: 36px;
+    color: rgb(255, 255, 255);
+    padding-right: 15px;
+    border-right: 4px solid rgb(22, 22, 22);
+    margin-right: 15px;
+    text-shadow: 4px 1px rgba(22, 22, 22, 0.51);
+}
+
+.call__back{
+    padding: 16px 12px;
+    font-size: 16px;
+    background: rgb(247, 70, 25);
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 40px;
+    border: 0;
+     cursor: pointer;
+    outline: none;
+}
+
+/* голова */
+
+.hero{
+    background: url(../img/sigvey_v_rime.jpg) no-repeat center / cover;
+}
+
+.consultants{
+
+}
+
+.cards__consultants{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 15px;
+}
+
+/* Бренды */
+
+.brands{
+    padding: 50px 0px;
+}
+
+.cards__brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 20px;
+    padding-top: 36px;
+}
+
+.brand__card{
+    max-height: 120px; 
+    margin-bottom: 20px;
+}
+
+
+
