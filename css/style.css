@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family:"Roboto-Regular";
+    font-size: 16px;
 }
 
 @font-face{
@@ -63,19 +64,22 @@ h1, h2, h3{
     background: rgba(22, 22, 22, 0.51);
 }
 
+.block__call{
+    display: flex;
+    align-items: center;
+}
+
 .phone{
-    font-size: 16px;
     line-height: 36px;
     color: rgb(255, 255, 255);
     padding-right: 15px;
     border-right: 4px solid rgb(22, 22, 22);
     margin-right: 15px;
-    text-shadow: 4px 1px rgba(22, 22, 22, 0.51);
+    text-shadow: 1px 1px rgba(22, 22, 22, 0.51);
 }
 
 .call__back{
     padding: 16px 12px;
-    font-size: 16px;
     background: rgb(247, 70, 25);
     text-transform: uppercase;
     color: #ffffff;
@@ -88,36 +92,162 @@ h1, h2, h3{
 /* голова */
 
 .hero{
-    background: url(../img/sigvey_v_rime.jpg) no-repeat center / cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url(../img/sigvey_v_rime.jpg) no-repeat center / cover;
+    padding: 210px;
+}
+.desc__hero{
+    text-align: start;
+    line-height: 180%;
+    color: linen;
+    max-width: 420px;
+}
+.title__hero{
+    text-align: start;
+    font-size: 48px;
+    line-height: 180%;
+    color: linen;
 }
 
-.consultants{
+/* слайдер */
 
+.benefits{
+ background-color:ivory;
+ padding: 60px 0;
+}
+
+.block__slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 150px;
+}
+
+.left--arrow{
+    transform: rotate(180deg);
+}
+
+.list__benefits{
+    max-width: 600px;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefit__item{
+    display: none;
+    list-style-type: none;
+    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img__border{
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed silver;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.title__benefit{
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid goldenrod;
+    line-height: 180%;
+}
+
+.item__act{
+    display: flex;
+}
+
+
+
+.consultants{
+ background-color: wheat;
+ padding: 60px 0;
 }
 
 .cards__consultants{
     display: flex;
     justify-content: space-around;
-    margin: 0px 15px;
+    flex-wrap: wrap;
+    margin: 50px 20px;
 }
+
+.desc__consultants{
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.img__consultant{
+    max-height: 300px;
+    box-shadow: 20px -15px rgb(0,0,0);
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+.title__consultant{
+    font-size: 24px;
+    line-height: 170%;
+}
+
 
 /* Бренды */
 
 .brands{
-    padding: 50px 0px;
+    padding: 60px 0px;
 }
 
 .cards__brands{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0px 20px;
+    margin: 30px 20px;
     padding-top: 36px;
 }
 
 .brand__card{
     max-height: 120px; 
     margin-bottom: 20px;
+}
+
+.description{
+    background-color:bisque;
+    padding: 60px 0px;
+}
+
+.block__content{
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+}
+
+.text__content{
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: -15px 15px rgb(216, 180, 135);
+}
+
+.img__content{
+    max-width: 350px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 
